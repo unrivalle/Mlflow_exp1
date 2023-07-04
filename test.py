@@ -88,6 +88,7 @@ if __name__ == "__main__":
             # mlflow.sklearn.log_model(
             #     lr, "model", registered_model_name="ElasticnetWineModel")
             mlflow.sklearn.log_model(
+                sk_model=lr,
                 artifact_path="sklearn-model",
                 registered_model_name="sk-learn-random-forest-reg-model",
             )
